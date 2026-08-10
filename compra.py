@@ -28,7 +28,5 @@ def realizar_compra(carrito, metodo_pago):
 
         return factura_generada
     else:
-        ("ERROR: método de pago no registado en el sistema, inténtelo con otro método de pago.")
-
-
-
+        print("ERROR: método de pago no registado en el sistema, inténtelo con otro método de pago.")
+        return False
