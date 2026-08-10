@@ -7,6 +7,9 @@ from pagos import confirmar_pago # confirmar pago exitoso
 from factura import generar_factura # Necesita carrito, total y método de pago
 
 def realizar_compra(carrito, metodo_pago):
+    if not carrito:
+        print("El carrito esta vacio")
+        return False
     if validar_metodo_pago(metodo_pago):
 
         monto_subtotal = subtotal(carrito)
