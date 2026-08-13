@@ -26,11 +26,8 @@ if entrada1 == "si":
             agregar_unproducto = agregar_producto(carrito, inventario, producto, cantidad_productos, inventario[producto]["precio"])
             if agregar_unproducto:
             
-                try:
-                    metodo_pago = input("Escriba el método de pago con el que desee pagar la compra: ").lower()
-                    realizar_compra(carrito, metodo_pago)
-                except ValueError:
-                    print("Escriba nuevamente su  método de pago correcto.")
+                metodo_pago = input("Escriba el método de pago con el que desee pagar la compra: ").lower()
+                realizar_compra(carrito, metodo_pago)
 
             else: 
                 print("La cantidad de productos que usted desea agregar superá al stock actual. Inténte que su cantidad sea igual o menor a la cantidad del stock.")
