@@ -2,7 +2,7 @@
 from carrito import carrito
 from compra import realizar_compra
 from inventario import inventario
-from carrito import agregar_producto # carritos, inventario, producto, cantidad, precio
+from carrito import agregar_producto # carritos, inventario, producto, cantidad y precio
 import time
 
 
